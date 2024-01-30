@@ -1,0 +1,50 @@
+.open-hours {
+  padding: 100px 0 0;
+}
+.open-hours .content {
+  padding: 80px 35px;
+  background: #ffedea;
+  border-radius: 5px;
+}
+.open-hours h2 {
+  text-align: center;
+}
+.open-hours ul {
+  border: 2px dotted #ff7a42;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.open-hours ul li {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333;
+  font-weight: 500;
+}
+.open-hours .hours {
+  margin: 0 25%;
+  border: 0;
+  border-radius: 5px;
+  background: #ff7a42;
+}
+.open-hours .hours li {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+@media (max-width: 576px) {
+  .open-hours .hours {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro .content img {
+    left: 0;
+  }
+
+  .open-hours ul {
+    padding: 12px;
+  }
+}
