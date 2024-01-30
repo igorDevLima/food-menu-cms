@@ -1,0 +1,51 @@
+/* ------------------------------
+  faq
+---------------------------------*/
+.faq {
+  padding: 100px 0 0;
+}
+.faq h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.faq .button {
+  margin-top: 35px;
+}
+.faq .accordion-item {
+  margin-bottom: 15px;
+  border: 1px solid #ffedea;
+}
+.faq .accordion-button {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.faq .accoridon-button.collapsed {
+  border-bottom: 1px solid #ffedea;
+}
+.faq .accordion-button:not(.collapsed) {
+  background: #fff;
+  color: #0a0a0a;
+  box-shadow: none;
+}
+.faq .accordion-button:focus {
+  border-color: #ffedea;
+  box-shadow: none;
+}
+.faq .accordion {
+  margin-left: 30px;
+}
+
+.faq .accordion-item {
+  padding: 12px 0;
+}
+
+@media (max-width: 576px) {
+  .faq .accordion {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .faq .accordion-item {
+    padding: 12px 0;
+  }
+}
