@@ -1,0 +1,35 @@
+.intro {
+  margin-top: 96px;
+}
+.intro .content {
+  background: #ffedea;
+  padding: 60px 40px;
+  border-radius: 5px;
+  color: #555;
+}
+.intro .content ul {
+  margin-top: 20px;
+}
+.intro .content ul li {
+  margin-right: 10px;
+  display: inline-block;
+}
+.intro .content ul li a i {
+  color: #ff7a42;
+  font-size: 18px;
+}
+.intro .content ul li a i:hover {
+  color: #0a0a0a;
+}
+.intro .content img {
+  border-radius: 50%;
+  padding: 50px;
+  position: relative;
+  left: 50px;
+}
+
+@media (max-width: 768px) {
+  .intro .content img {
+    left: 0;
+  }
+}
