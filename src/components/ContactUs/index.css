@@ -1,0 +1,57 @@
+.contact {
+  padding: 100px 0 0;
+}
+.contact .content {
+  background: #ffedea;
+  padding: 35px 35px;
+  border-radius: 0 5px 5px 0;
+}
+.contact .content ul li {
+  padding: 10px 0;
+  font-size: 15px;
+  color: #555;
+  font-weight: 500;
+  line-height: 30px;
+}
+.contact .content i {
+  font-size: 30px;
+  border: 1px solid #ff7a42;
+  border-radius: 2px;
+  padding: 10px;
+  color: #ff7a42;
+  margin-right: 20px;
+  position: relative;
+  top: 6px;
+}
+.contact .content-map iframe {
+  width: 100%;
+  border-radius: 5px 0 0 5px;
+}
+
+@media (max-width: 576px) {
+  .contact .content-map iframe {
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+
+  .contact .content {
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact .content i {
+    padding: 0;
+    border: 0;
+  }
+
+  .contact .content ul li {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact .content-map iframe {
+    height: 365px;
+  }
+}

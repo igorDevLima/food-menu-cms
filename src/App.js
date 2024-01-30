@@ -6,6 +6,7 @@ import OpenHours from "./components/OpenHours";
 import Product from "./components/Product";
 import Cta from "./components/Cta";
 import Faq from "./components/Faq";
+import ContactUs from "./components/ContactUs";
 import "./App.css";
 function App() {
       <Navbar />
@@ -15,6 +16,7 @@ function App() {
       <Product />
       <Cta />
       <Faq />
+      <ContactUs />
       <Footer />
 }
 
