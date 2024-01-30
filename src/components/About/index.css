@@ -1,0 +1,46 @@
+.about {
+  padding: 100px 0 0;
+}
+.about .content {
+  padding-left: 15px;
+}
+.about img {
+  border-radius: 5px;
+}
+.about .icon {
+  position: relative;
+  top: -11px;
+  float: left;
+  margin-right: 15px;
+}
+.about .icon i {
+  font-size: 30px;
+  border: 1px solid #ff7a42;
+  border-radius: 2px;
+  padding: 10px;
+  color: #ff7a42;
+}
+.about .text {
+  overflow: hidden;
+  position: relative;
+  top: -14px;
+}
+.about .row .row {
+  margin-top: 50px;
+}
+
+@media (max-width: 360px) {
+  .about .row .row .col {
+    flex: initial;
+    display: inherit;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about .content {
+    padding-top: 30px;
+    padding-left: 0;
+  }
+}
