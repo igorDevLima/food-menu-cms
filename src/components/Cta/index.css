@@ -1,0 +1,32 @@
+.cta {
+  padding: 100px 0 0;
+}
+.cta img {
+  padding-right: 40px;
+  position: relative;
+  top: 248px;
+  margin-top: -248px;
+  border-radius: 5px;
+}
+.cta .box-content {
+  background: #ffedea;
+  border-radius: 5px;
+  padding: 50px 40px;
+}
+.cta .box-content .button {
+  margin-top: 40px;
+}
+
+@media (max-width: 576px) {
+  .cta img {
+    top: 0;
+    padding-right: 0;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta img {
+    top: 300px;
+  }
+}
