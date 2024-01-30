@@ -7,8 +7,12 @@ import Product from "./components/Product";
 import Cta from "./components/Cta";
 import Faq from "./components/Faq";
 import ContactUs from "./components/ContactUs";
+
 import "./App.css";
+
 function App() {
+  return (
+    <div className="App">
       <Navbar />
       <Intro />
       <About />
@@ -18,6 +22,8 @@ function App() {
       <Faq />
       <ContactUs />
       <Footer />
+    </div>
+  );
 }
 
 export default App;
