@@ -1,21 +1,12 @@
-FROM node:20-alpine as build
+FROM node:20-alpine
 
-WORKDIR /app
-
-ENV PATH /app/node_modules/.bin:$PATH
+WORKDIR /app/frontend
 
 COPY package*.json ./
-RUN npm ci --silent
 
-COPY . ./
-RUN npm run build
+RUN npm install
 
-FROM nginx:stable-alpine
+COPY . .
 
-COPY --from=build /app/build /usr/share/nginx/html
-COPY ./docker/nginx.conf /etc/nginx/conf.d/default.conf
-
-EXPOSE 3000
-
-CMD [ "nginx" , "-g" , "daemon off;" ]
+CMD ["npm", "start"]
 
