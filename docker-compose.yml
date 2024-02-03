@@ -61,9 +61,8 @@ services:
       - "3000:3000"
     networks:
       - strapi
-
-
-        
+    depends_on:
+      - strapi
 
 volumes:
   strapi-data:
