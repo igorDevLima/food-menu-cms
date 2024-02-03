@@ -30,10 +30,10 @@ services:
       - strapi
     depends_on:
       - strapiDB
-
+      
   strapiDB:
     container_name: strapiDB
-    platform: linux/amd64 
+    platform: linux/amd64
     restart: unless-stopped
     env_file: .env
     image: mysql:latest
@@ -46,12 +46,11 @@ services:
       MYSQL_ROOT_HOST: '%'
     volumes:
       - strapi-data:/var/lib/mysql
-      #- ./data:/var/lib/mysql # if you want to use a bind folder
     ports:
       - "3306:3306"
     networks:
       - strapi
-    
+      
   strapiAdminer:
     container_name: strapiAdminer
     image: adminer
@@ -64,7 +63,7 @@ services:
       - strapi
     depends_on:
       - strapiDB
-
+    
   frontend:
     build:
       context: ./frontend
