@@ -15,7 +15,6 @@ services:
       DATABASE_PASSWORD: ${DATABASE_PASSWORD}
       JWT_SECRET: ${JWT_SECRET}
       ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
-      APP_KEYS: ${APP_KEYS}
       NODE_ENV: ${NODE_ENV}
     volumes:
       - ./strapi/config:/opt/app/config
