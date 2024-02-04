@@ -1,20 +1,16 @@
+import Map from "../Map";
+
 const ContactUs = () => {
   return (
     <div id="contact" className="contact">
       <div className="container">
         <div className="row g-0">
           <div className="col-md">
-            <div className="content-map">
-              <iframe
-                title="map"
-                src="https://www.google.com/maps/embed/v1/place?key=
-                &q=Space+Needle,Seattle+WA"
-                height="350"
-                style={{ style: "border:0" }}
-                allowFullScreen=""
-                loading="lazy"
-              ></iframe>
-            </div>
+            <Map
+              center={[45.02133335176785, -69.26838037323436]}
+              zoom={13}
+              adress="strapi address here"
+            />
           </div>
           <div className="col-md">
             <div className="content">
