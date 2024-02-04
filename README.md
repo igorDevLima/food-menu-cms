@@ -50,7 +50,7 @@ docker compose up --build
 
 - In your browser by navigating to `http://localhost:1337/admin`
 
-- Log in using the default credentials: username `admin@admin.com` and password `admin`.
+- Log in using the default credentials: username `admin@admin.com` and password `Admin123`.
 
 ### 5. Explore the food menu on your browser by visiting `http://localhost:3000`.
 
