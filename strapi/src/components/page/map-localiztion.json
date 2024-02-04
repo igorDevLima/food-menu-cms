@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_page_map_localiztions",
+  "info": {
+    "displayName": "map localiztion"
+  },
+  "options": {},
+  "attributes": {
+    "latitude": {
+      "type": "string",
+      "required": true
+    },
+    "longitude": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

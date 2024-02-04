@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_page_benefits",
+  "info": {
+    "displayName": "benefits",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

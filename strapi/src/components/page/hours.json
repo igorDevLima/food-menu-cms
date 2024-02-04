@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_page_hours",
+  "info": {
+    "displayName": "hours",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "open": {
+      "type": "string"
+    },
+    "close": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_page_opens",
+  "info": {
+    "displayName": "open",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "day": {
+      "type": "enumeration",
+      "enum": [
+        "MONDAY",
+        "TUESDAY",
+        "WEDNESDAY",
+        "THURSDAY",
+        "FRIDAY",
+        "SATURDAY",
+        "SUNDAY"
+      ]
+    },
+    "allhours": {
+      "type": "boolean",
+      "default": false
+    },
+    "hour": {
+      "displayName": "hours",
+      "type": "component",
+      "repeatable": false,
+      "component": "page.hours",
+      "required": true
+    }
+  }
+}
