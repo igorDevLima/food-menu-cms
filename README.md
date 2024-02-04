@@ -54,10 +54,10 @@ docker compose up --build
 
 ### 5. Explore the food menu on your browser by visiting `http://localhost:3000`.
 
-### 6. To stop containers and remove volumes:
+### 6. To stop containers:
 
 ```shell
-docker compose down -v
+docker compose down
 ```
 
 Feel free to customize and enhance your Strapi experience by adapting the configurations to suit your project requirements. If you encounter any issues or have questions, refer to the documentation or seek help from the community.
