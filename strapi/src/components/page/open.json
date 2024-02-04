@@ -2,20 +2,21 @@
   "collectionName": "components_page_opens",
   "info": {
     "displayName": "open",
-    "icon": "clock"
+    "icon": "clock",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "day": {
       "type": "enumeration",
       "enum": [
+        "SUNDAY",
         "MONDAY",
         "TUESDAY",
         "WEDNESDAY",
         "THURSDAY",
         "FRIDAY",
-        "SATURDAY",
-        "SUNDAY"
+        "SATURDAY"
       ]
     },
     "allhours": {
@@ -27,7 +28,7 @@
       "type": "component",
       "repeatable": false,
       "component": "page.hours",
-      "required": true
+      "required": false
     }
   }
 }
