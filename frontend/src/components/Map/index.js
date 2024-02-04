@@ -1,10 +1,9 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
-import marker from "./map-marker.png";
 
 const myIcon = L.icon({
-  iconUrl: marker,
-  iconRetinaUrl: marker,
+  iconUrl: '/image/map-marker.png',
+  iconRetinaUrl: '/image/map-marker.png',
   popupAnchor: [-0, -0],
   iconSize: [30, 30],
 });
