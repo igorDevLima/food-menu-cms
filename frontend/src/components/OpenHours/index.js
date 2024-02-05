@@ -1,58 +1,42 @@
+import useStrapi from "../../hooks/useStrapi";
+import StrapiWrapper from "../StrapiWrapper";
 import "./index.css";
 
 const OpenHours = () => {
+  const { strapiData, isFetching } = useStrapi({
+    route: "open-hour",
+    populate: "populate[0]=weekday&populate[2]=weekday.hour",
+  });
+
   return (
-    <div className="open-hours">
-      <div className="container">
-        <div className="content">
-          <h2>Open Hours</h2>
-          <div className="row">
-            <div className="col-md">
-              <ul>
-                <li>Monday</li>
-                <li>8am - 7pm</li>
-              </ul>
-            </div>
-            <div className="col-md">
-              <ul>
-                <li>Tuesday</li>
-                <li>8am - 7pm</li>
-              </ul>
-            </div>
-            <div className="col-md">
-              <ul>
-                <li>Wednesday</li>
-                <li>8am - 7pm</li>
-              </ul>
-            </div>
-            <div className="col-md">
-              <ul>
-                <li>Thursday</li>
-                <li>8am - 7pm</li>
-              </ul>
-            </div>
-            <div className="col-md">
-              <ul>
-                <li>Friday</li>
-                <li>8am - 7pm</li>
-              </ul>
-            </div>
-            <div className="col-md">
-              <ul>
-                <li>Saturday</li>
-                <li>8am - 7pm</li>
-              </ul>
-            </div>
-            <div className="col-md-12">
-              <ul className="hours text-center">
-                <li>Sunday</li>
-                <li>24 Hours</li>
-              </ul>
+    <StrapiWrapper data={strapiData} isFetching={isFetching}>
+      <div className="open-hours">
+        <div className="container">
+          <div className="content">
+            <h2>{strapiData?.heading}</h2>
+            <div className="row">
+              {strapiData?.weekday?.map((item) => {
+                return item.allhours === true ? (
+                  <div className="col-md-12" key={item.id}>
+                    <ul className="hours text-center">
+                      <li>{item.day}</li>
+                      <li>24 Hours</li>
+                    </ul>
+                  </div>
+                ) : (
+                  <div className="col-md" key={item.id}>
+                    <ul>
+                      <li>{item.day}</li>
+                      <li>{item.hour?.open} - {item.hour?.close}</li>
+                    </ul>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </StrapiWrapper>
   );
 };
 
