@@ -4,7 +4,8 @@
   "info": {
     "singularName": "about",
     "pluralName": "abouts",
-    "displayName": "About"
+    "displayName": "About",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,12 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": false
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "heading": {
       "type": "string",
@@ -29,7 +30,7 @@
     "benefit": {
       "displayName": "benefits",
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "page.benefits",
       "required": true
     }

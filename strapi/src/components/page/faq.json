@@ -2,16 +2,17 @@
   "collectionName": "components_page_faqs",
   "info": {
     "displayName": "faq",
-    "icon": "question"
+    "icon": "question",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "question": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "response": {
-      "type": "string",
+      "type": "text",
       "required": true
     }
   }
