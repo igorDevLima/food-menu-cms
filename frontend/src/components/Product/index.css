@@ -18,12 +18,12 @@
   left: -11px;
 }
 .product .product-filter-menu ul {
-  background: #ffedea;
+  background: var(--section-background);
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 14px;
   font-weight: 600;
-  color: #0a0a0a;
+  color: var(--heading);
 }
 .product .product-filter-menu ul li {
   display: inline-block;
@@ -31,12 +31,12 @@
   cursor: pointer;
 }
 .product .product-filter-menu ul li:hover {
-  color: #ff7a42;
+  color: var(--primary);
 }
 .product .content {
   border-radius: 5px;
   padding: 20px;
-  border: 1px solid #ffedea;
+  border: 1px solid var(--section-background);
 }
 .product .content img {
   border-radius: 5px;
@@ -50,7 +50,7 @@
 }
 .product .content span {
   font-size: 23px;
-  color: #ff7a42;
+  color: var(--primary);
   font-family: "Heebo", sans-serif;
 }
 

@@ -9,7 +9,7 @@
   border-radius: 5px;
 }
 .cta .box-content {
-  background: #ffedea;
+  background: var(--section-background);
   border-radius: 5px;
   padding: 50px 40px;
 }

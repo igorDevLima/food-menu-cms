@@ -15,10 +15,10 @@
 }
 .about .icon i {
   font-size: 30px;
-  border: 1px solid #ff7a42;
+  border: 1px solid var(--primary);
   border-radius: 2px;
   padding: 10px;
-  color: #ff7a42;
+  color: var(--primary);
 }
 .about .text {
   overflow: hidden;

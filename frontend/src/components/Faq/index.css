@@ -13,22 +13,22 @@
 }
 .faq .accordion-item {
   margin-bottom: 15px;
-  border: 1px solid #ffedea;
+  border: 1px solid var(--section-background);
 }
 .faq .accordion-button {
   padding-top: 0;
   padding-bottom: 0;
 }
 .faq .accoridon-button.collapsed {
-  border-bottom: 1px solid #ffedea;
+  border-bottom: 1px solid var(--section-background);
 }
 .faq .accordion-button:not(.collapsed) {
   background: #fff;
-  color: #0a0a0a;
+  color: var(--heading);
   box-shadow: none;
 }
 .faq .accordion-button:focus {
-  border-color: #ffedea;
+  border-color: var(--section-background);
   box-shadow: none;
 }
 .faq .accordion {

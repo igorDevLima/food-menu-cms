@@ -2,7 +2,7 @@
   margin-top: 96px;
 }
 .intro .content {
-  background: #ffedea;
+  background: var(--section-background);
   padding: 60px 40px;
   border-radius: 5px;
   color: #555;
@@ -15,11 +15,11 @@
   display: inline-block;
 }
 .intro .content ul li a i {
-  color: #ff7a42;
+  color: var(--primary);
   font-size: 18px;
 }
 .intro .content ul li a i:hover {
-  color: #0a0a0a;
+  color: var(--heading);
 }
 .intro .content img {
   border-radius: 50%;

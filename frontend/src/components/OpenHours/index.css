@@ -3,14 +3,14 @@
 }
 .open-hours .content {
   padding: 80px 35px;
-  background: #ffedea;
+  background: var(--section-background);
   border-radius: 5px;
 }
 .open-hours h2 {
   text-align: center;
 }
 .open-hours ul {
-  border: 2px dotted #ff7a42;
+  border: 2px dotted var(--primary);
   margin-bottom: 20px;
   padding: 20px;
 }
@@ -25,7 +25,7 @@
   margin: 0 25%;
   border: 0;
   border-radius: 5px;
-  background: #ff7a42;
+  background: var(--primary);
 }
 .open-hours .hours li {
   color: #fff;

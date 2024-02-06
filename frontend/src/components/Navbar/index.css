@@ -1,6 +1,6 @@
 .navbar {
   top: 0;
-  background: #ffffff;
+  background: var(--background);
   padding: 25px 0;
   position: fixed;
   width: 100%;
@@ -16,7 +16,7 @@
   width: auto;
 }
 .navbar .navbar-brand:hover {
-  color: #0a0a0a;
+  color: var(--heading);
 }
 .navbar .navbar-toggler {
   padding: 0;
@@ -41,11 +41,11 @@
   padding: 0 10px;
 }
 .navbar .navbar-nav li a {
-  color: #0a0a0a;
+  color: var(--heading);
   font-weight: 500;
 }
 .navbar .navbar-nav li a:hover {
-  color: #ff7a42;
+  color: var(--primary);
 }
 .navbar .navbar-nav li .button {
   color: #fff;

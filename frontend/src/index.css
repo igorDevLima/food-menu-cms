@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root {
+  --primary: #ff7a42;
+  --secondary: #ff5252;
+  --background: #ffffff;
+  --section-background: #ffedea;
+  --text: #6a6a6a;
+  --heading: #0a0a0a;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-size: 16px;
   font-family: "Raleway", sans-serif;
-  background: #ffffff;
-  color: #6a6a6a;
+  background: var(--background);
+  color: var(--text);
 }
 
 h1,
@@ -18,7 +27,7 @@ h6 {
   font-family: "Heebo", sans-serif;
   padding: 0;
   margin: 0;
-  color: #0a0a0a;
+  color: var(--heading);
 }
 
 h1 {
@@ -57,11 +66,11 @@ h6 {
 
 a {
   text-decoration: none;
-  color: #464646;
+  color: var(--text);
 }
 
 a:hover {
-  color: #ff5252;
+  color: var(--secondary);
 }
 
 p {
@@ -83,12 +92,12 @@ ul li {
   letter-spacing: 1px;
   font-weight: 600;
   margin-bottom: 15px;
-  color: #ff7a42;
+  color: var(--primary);
 }
 .the-title span {
   height: 1px;
   width: 40px;
-  background: #0a0a0a;
+  background: var(--heading);
   display: inline-block;
   bottom: 5px;
   position: relative;
