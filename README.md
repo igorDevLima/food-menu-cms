@@ -52,7 +52,7 @@ docker compose up --build
 
 - Create your admin credential
 
-- Fill in the fields of Single Types and Collection Types with the content you desire 
+- Set the fields of `Single Types` and `Collection Types` with the content you desire 
 
 ### 5. Explore the food menu on your browser by visiting `http://localhost:3000`.
 
