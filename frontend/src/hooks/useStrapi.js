@@ -21,6 +21,8 @@ const useStrapi = ({ route, populate }) => {
     }
   }, [response]);
 
+  const convertToStrapiImageUrl = (imageUrl) => `http://localhost:1337${imageUrl}`;
+
   return {
     strapiData,
     strapiConfig,
@@ -28,6 +30,7 @@ const useStrapi = ({ route, populate }) => {
     strapiStatus,
     isFetching,
     error,
+    convertToStrapiImageUrl
   };
 };
 
